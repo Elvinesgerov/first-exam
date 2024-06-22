@@ -1,0 +1,95 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+body {
+ overflow-x: hidden;
+ width: 100%;
+ background-image: url("bcg.jpg");
+}
+
+.container {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+ gap: 50px;
+ height: 100vh;
+}
+
+.card {
+ width: 300px;
+ background-color: rgba(128, 128, 128, 0.683);
+ border-radius: 12px;
+ overflow: hidden;
+ transition: 0.7s;
+}
+
+.top {
+ height: 40%;
+ padding: 20% 0;
+ transition: 0.7s;
+}
+
+.top i {
+ font-size: 75px;
+ color: white;
+ display: flex;
+ justify-content: center;
+}
+
+.bottom {
+ background-color: rgba(128, 128, 128, 0.683);
+ padding: 20px 0;
+ text-align: center;
+ transition: 0.7s;
+}
+
+.bottom p {
+ font-size: 19px;
+ margin: 15px auto;
+ width: 250px;
+ text-align: justify;
+}
+
+.bottom button {
+ width: 120px;
+ height: 25px;
+ background-color: black;
+ color: white;
+ font-size: 15px;
+ border: none;
+ border-radius: 6px;
+ transition: 0.7s;
+}
+
+.red {
+ background-color: red;
+}
+
+.blue {
+ background-color: blue;
+}
+
+.yellow {
+ background-color: yellow;
+}
+
+.bottom button:hover {
+ transform: scale(1.1);
+}
+
+.card:hover {
+ background-color: white;
+ transform: scale(1.1);
+}
+
+.card:hover .top {
+ border-bottom-right-radius: 40%;
+}
+
+.card:hover .bottom {
+ background-color: white;
+}
